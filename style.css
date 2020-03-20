@@ -12,7 +12,9 @@
     margin: 50px auto;
     position: relative;
     text-align: center;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: center;
     justify-content: center;
 }
 
@@ -20,7 +22,9 @@
     position: relative;
     margin: 0 auto;
     text-align: center;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: center;
     justify-content: center;
     width: 79px;
     height: 100%;
@@ -81,56 +85,13 @@
     50%,
     100% {
         height: 10px;
+        -webkit-transform: translateY(0);
         transform: translateY(0);
         background-color: #9B59B6;
     }
     25% {
         height: 50px;
-        transform: translateY(15px);
-        background-color: #3498B6;
-    }
-}
-
-@-o-keyframes wave {
-    0%,
-    50%,
-    100% {
-        height: 10px;
-        transform: translateY(0);
-        background-color: #9B59B6;
-    }
-    25% {
-        height: 50px;
-        transform: translateY(15px);
-        background-color: #3498B6;
-    }
-}
-
-@-ms-keyframes wave {
-    0%,
-    50%,
-    100% {
-        height: 10px;
-        transform: translateY(0);
-        background-color: #9B59B6;
-    }
-    25% {
-        height: 50px;
-        transform: translateY(15px);
-        background-color: #3498B6;
-    }
-}
-
-@-moz-keyframes wave {
-    0%,
-    50%,
-    100% {
-        height: 10px;
-        transform: translateY(0);
-        background-color: #9B59B6;
-    }
-    25% {
-        height: 50px;
+        -webkit-transform: translateY(15px);
         transform: translateY(15px);
         background-color: #3498B6;
     }
@@ -141,11 +102,13 @@
     50%,
     100% {
         height: 10px;
+        -webkit-transform: translateY(0);
         transform: translateY(0);
         background-color: #9B59B6;
     }
     25% {
         height: 50px;
+        -webkit-transform: translateY(15px);
         transform: translateY(15px);
         background-color: #3498B6;
     }
